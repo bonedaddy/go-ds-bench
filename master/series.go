@@ -69,7 +69,6 @@ func (s *Series) doSingle(f ...DsFilter) error {
 				}
 				s.Results[ds.Name] = append(s.Results[ds.Name], r)
 
-
 				log.Println("saving progress")
 				s.saveResults()
 				return nil

@@ -7,8 +7,8 @@ type WorkerDatastore struct {
 	Name string
 	Tags []string
 
-	Scripts struct{
-		Pre string
+	Scripts struct {
+		Pre  string
 		Post string
 	}
 
@@ -36,7 +36,7 @@ var DefaultBenchOpts = OptionsRange2pow(
 	BenchOptions{1, 25 << 10, 64},
 	BenchOptions{1 << 18, 25 << 10, 64}, 8)
 
-  // 20 / 25 / 13 is 1M / ~20G
+// 20 / 25 / 13 is 1M / ~20G
 
 func OptionsRange2pow(start, end BenchOptions, countPerAxis int) []BenchOptions {
 	res := []BenchOptions{start}
