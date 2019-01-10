@@ -12,9 +12,8 @@ import (
 	"github.com/ipfs/go-ds-bolt"
 	"github.com/ipfs/go-ds-flatfs"
 	"github.com/ipfs/go-ds-leveldb"
+	"github.com/mitchellh/go-homedir"
 	levelopt "github.com/syndtr/goleveldb/leveldb/opt"
-
-	"gx/ipfs/QmdcULN1WCzgoQmcCaUAmEhwcxHYsDrbZ2LvRJKCL8dMrK/go-homedir"
 )
 
 func nopCloser() {}
